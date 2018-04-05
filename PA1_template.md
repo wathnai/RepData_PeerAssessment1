@@ -123,7 +123,7 @@ Create a new factor variable in the dataset with two levels - "weekday" and "wee
 ```{r}
 
 activity_na$day <- weekdays(as.Date(activity_na$date))
-activity_na$weekend <- ifelse(activity_na$day == "sábado" | activity_na$day == "domingo","weekend", "weekday")
+activity_na$weekend <- ifelse(activity_na$day == "sÃ¡bado" | activity_na$day == "domingo","weekend", "weekday")
 
 activity_na_weekend <- aggregate(activity_na$steps, by=list(activity_na$weekend , activity_na$interval), FUN=mean)
 colnames(activity_na_weekend) <- c("weekday" , "interval", "steps")
