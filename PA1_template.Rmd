@@ -2,9 +2,7 @@
 title: "Untitled"
 author: "Julian Sanchez - wathnai@hotmail.com"
 date: "22 de marzo de 2018"
-output: 
-  html_document: 
-    fig_caption: yes
+output: md_document
 ---
 
 ```{r setup, include=FALSE}
