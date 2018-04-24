@@ -8,8 +8,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-fig.path='figure/'
+knitr::opts_chunk$set(echo = TRUE,fig.path='figure/')
 ```
 
 
@@ -36,7 +35,7 @@ barplot(height=steps_by_day$x, names.arg=steps_by_day$date, xlab="Date", ylim=c(
 
 2 Calculate and report the mean and median total number of steps taken per day
 
-```{r}
+```{r echo=TRUE}
 mean_steps_by_day <- mean(steps_by_day$x, na.rm = TRUE)
 median_steps_by_day <- median(steps_by_day$x, na.rm = TRUE)
 barplot(height=steps_by_day$x, names.arg=steps_by_day$date, xlab="Date", 
